@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barra Lateral Navegación</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral Navegación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link style="border-radius: 50px;" rel="website icon" type="png" href="logo.png">
   <style>
     html {
       scroll-behavior: smooth;
@@ -161,7 +162,11 @@
       width: 100%;
     }
     @media (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+      }
       body {
+        background-color: #94a3b8;
         display: block;
       }
 
@@ -184,30 +189,44 @@
       .present h1 {
         font-size: 36px;
       }
-
+      
       main {
         margin: 0;
         padding: 20px;
       }
-
+      
       .texto-proyecto {
         padding-left: 0;
+        align-items: center;
       }
-
+      
       .proyecto a img {
         position: static;
-        width: 100%;
-        margin-top: 10px;
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+        width: auto;
+        height: auto;
       }
 
       a img {
         position: static;
-        margin: 20px auto;
+        margin: 20px 0 20px 35px;
         display: block;
       }
 
       #github {
-        margin: 20px auto;
+        margin: 20px 0 20px 35px;
+        position: static;
+        
+      }
+      .fin {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
     }
 
