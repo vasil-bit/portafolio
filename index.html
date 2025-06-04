@@ -174,7 +174,7 @@
         width: 100%;
         height: auto;
         position: relative;
-        padding: 20px;
+        padding: 40px;
         text-align: center;
       }
 
@@ -211,22 +211,27 @@
 
       a img {
         position: static;
-        margin: 20px 0 20px 35px;
+        margin: 20px 0 20px 55px;
         display: block;
       }
 
       #github {
-        margin: 20px 0 20px 35px;
+        margin: 20px 0 20px 55px;
         position: static;
         
       }
       .fin {
-        width: 100%;
+        margin: 100px auto 50px; /* Centrado horizontal con márgenes automáticos */
         padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        width: 90%; /* Ocupa el 90% del ancho para evitar pegado a los bordes */
+        max-width: 100%; /* No superar el ancho de la pantalla */
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+      }
+
+      .fin p {
+        margin: 0 auto; /* Centra el párrafo */
+        width: 100%; /* Asegura que ocupe todo el espacio disponible */
       }
     }
 
